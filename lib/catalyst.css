@@ -500,6 +500,67 @@ body>.card {
 	display: initial !important;
 }
 
+/* Loading */
+
+@keyframes loading_rotate {
+	/* 0% {transform: rotate(0deg)}
+	5% {transform: rotate(18deg)}
+	10% {transform: rotate(36deg)}
+	15% {transform: rotate(54deg)}
+	20% {transform: rotate(72deg)}
+	30% {transform: rotate(108deg)}
+	40% {transform: rotate(144deg)}
+	50% {transform: rotate(180deg)}
+	60% {transform: rotate(216deg)}
+	70% {transform: rotate(252deg)}
+	80% {transform: rotate(288deg)}
+	90% {transform: rotate(324deg)}
+	100% {transform: rotate(360deg)} */
+	from {color: #2196F3; transform: rotate(0deg);}
+	to {color: #64FFDA; transform: rotate(360deg);}
+}
+
+.loading:before {
+	content: "\25DC";
+	font-size: 50px;
+	display: inline-block;
+	animation-name: loading_rotate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.loading.centered {
+	position: fixed;
+	top: 38%;
+	left: 45%;
+}
+
+.loading.centered:before {
+	font-size: 100px;
+}
+
+/* Icons */
+.icon {
+	display: inline-block;
+	font-size: 30px;
+}
+
+.icon.pause {
+	transform: rotate(90deg);
+}
+
+.icon.pause:before {
+	content: "=";
+}
+
+.icon.play:before {
+	content: "\25BA";
+}
+
+.icon.fullscreen:before {
+	content: "\26F6";
+}
+
 /* Redesign */
 footer {
 	border-top: 0.025rem solid black;
