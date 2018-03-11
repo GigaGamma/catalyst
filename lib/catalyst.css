@@ -561,6 +561,10 @@ body>.card {
 	content: "\26F6";
 }
 
+.icon.fold {
+	content: "\2630";
+}
+
 /* Redesign */
 footer {
 	border-top: 0.025rem solid black;
