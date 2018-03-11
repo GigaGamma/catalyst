@@ -561,7 +561,7 @@ body>.card {
 	content: "\26F6";
 }
 
-.icon.fold {
+.icon.fold:before {
 	content: "\2630";
 }
 
